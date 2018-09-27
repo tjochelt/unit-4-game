@@ -43,6 +43,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -54,6 +58,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
   });
 
@@ -73,6 +81,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -84,6 +96,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
   });
 
@@ -103,6 +119,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -114,6 +134,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
   });
 
@@ -133,6 +157,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -144,6 +172,10 @@ $(document).ready(function() {
         playerGoal = Math.floor(Math.random() * 102) + 19;
       });
       $("#random-number").html(playerGoal);
+      crystalOne = Math.floor(Math.random() * 12) + 1;
+      crystalTwo = Math.floor(Math.random() * 12) + 1;
+      crystalThree = Math.floor(Math.random() * 12) + 1;
+      crystalFour = Math.floor(Math.random() * 12) + 1;
     }
   });
 });
