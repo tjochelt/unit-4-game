@@ -32,14 +32,14 @@ $(document).ready(function() {
     console.log("one" + crystalOne + " ", playerTotal);
     if (playerTotal === playerGoal) {
       console.log("You Win!!!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
@@ -52,14 +52,14 @@ $(document).ready(function() {
     console.log("two" + crystalTwo + " ", playerTotal);
     if (playerTotal === playerGoal) {
       console.log("You Win!!!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
@@ -72,14 +72,14 @@ $(document).ready(function() {
     console.log("three" + crystalThree + " ", playerTotal);
     if (playerTotal === playerGoal) {
       console.log("You Win!!!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
@@ -92,14 +92,14 @@ $(document).ready(function() {
     console.log("four" + crystalFour + " ", playerTotal);
     if (playerTotal === playerGoal) {
       alert("You Win!!!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
-      playerTotal = 0;
+      $("#total-score").html((playerTotal = 0));
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
