@@ -6,6 +6,7 @@ $(document).ready(function() {
   var lossTotal = 0;
 
   //sets player goal as random number between 19-120
+
   $("#random-number").text(function getGoal() {
     playerGoal = Math.floor(Math.random() * 102) + 19;
   });
@@ -26,6 +27,8 @@ $(document).ready(function() {
 
   //click crystal, update player total with crystal value
   //show on UI
+
+  //crystal 1 logic
   $("#crystal-1").on("click", function() {
     playerTotal += crystalOne;
     $("#total-score").html(playerTotal);
@@ -36,6 +39,10 @@ $(document).ready(function() {
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -43,9 +50,15 @@ $(document).ready(function() {
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
   });
 
+  
+  //crystal 2 logic
   $("#crystal-2").on("click", function() {
     playerTotal += crystalTwo;
     $("#total-score").html(playerTotal);
@@ -56,6 +69,10 @@ $(document).ready(function() {
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -63,9 +80,15 @@ $(document).ready(function() {
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
   });
 
+  
+  //crystal 3 logic
   $("#crystal-3").on("click", function() {
     playerTotal += crystalThree;
     $("#total-score").html(playerTotal);
@@ -76,6 +99,10 @@ $(document).ready(function() {
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -83,9 +110,15 @@ $(document).ready(function() {
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
   });
 
+  
+  //crystal4 logic
   $("#crystal-4").on("click", function() {
     playerTotal += crystalFour;
     $("#total-score").html(playerTotal);
@@ -96,6 +129,10 @@ $(document).ready(function() {
       winTotal++;
       $("#win-total").html(winTotal);
       console.log(winTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
     if (playerTotal > playerGoal) {
       alert("Loser!");
@@ -103,19 +140,10 @@ $(document).ready(function() {
       lossTotal++;
       $("#loss-total").html(lossTotal);
       console.log(lossTotal);
+      $("#random-number").text(function getGoal() {
+        playerGoal = Math.floor(Math.random() * 102) + 19;
+      });
+      $("#random-number").html(playerGoal);
     }
   });
-
-  // If user total === playerGoal, reset game.
-
-  // Else if it matches exactly,
-  // 	    Win total increases by one
-  // 	    Score resets
-  // 	    Random numbers for crystals and match number reset
-  // 	    Display 'you win'
-  // Else
-  // 	    Loss total increase by one
-  // 	    Score resets
-  // 	    Random numbers for crystals and match number reset
-  // 	    Display you lose
 });
