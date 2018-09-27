@@ -34,7 +34,7 @@ $(document).ready(function() {
     $("#total-score").html(playerTotal);
     console.log("one" + crystalOne + " ", playerTotal);
     if (playerTotal === playerGoal) {
-      console.log("You Win!!!");
+           alert("You Win!!!");
       $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
@@ -65,14 +65,13 @@ $(document).ready(function() {
     }
   });
 
-  
   //crystal 2 logic
   $("#crystal-2").on("click", function() {
     playerTotal += crystalTwo;
     $("#total-score").html(playerTotal);
     console.log("two" + crystalTwo + " ", playerTotal);
     if (playerTotal === playerGoal) {
-      console.log("You Win!!!");
+           alert("You Win!!!");
       $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
@@ -103,14 +102,13 @@ $(document).ready(function() {
     }
   });
 
-  
   //crystal 3 logic
   $("#crystal-3").on("click", function() {
     playerTotal += crystalThree;
     $("#total-score").html(playerTotal);
     console.log("three" + crystalThree + " ", playerTotal);
     if (playerTotal === playerGoal) {
-      console.log("You Win!!!");
+           alert("You Win!!!");
       $("#total-score").html((playerTotal = 0));
       winTotal++;
       $("#win-total").html(winTotal);
@@ -141,7 +139,6 @@ $(document).ready(function() {
     }
   });
 
-  
   //crystal4 logic
   $("#crystal-4").on("click", function() {
     playerTotal += crystalFour;
