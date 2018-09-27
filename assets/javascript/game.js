@@ -1,12 +1,12 @@
-// 4 crystals are buttons
-
 // Random number to match should be between 19 and 120
 $(document).ready(function() {
   var playerGoal;
   var playerTotal = 0;
+  var winTotal = 0;
+  var lossTotal = 0;
 
   //sets player goal as random number between 19-120
-  $("#random-number").text(function() {
+  $("#random-number").text(function getGoal() {
     playerGoal = Math.floor(Math.random() * 102) + 19;
   });
   $("#random-number").html(playerGoal);
@@ -31,10 +31,18 @@ $(document).ready(function() {
     $("#total-score").html(playerTotal);
     console.log("one" + crystalOne + " ", playerTotal);
     if (playerTotal === playerGoal) {
-        console.log("You Win!!!")
+      console.log("You Win!!!");
+      playerTotal = 0;
+      winTotal++;
+      $("#win-total").html(winTotal);
+      console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
-        alert("Loser!")
+      alert("Loser!");
+      playerTotal = 0;
+      lossTotal++;
+      $("#loss-total").html(lossTotal);
+      console.log(lossTotal);
     }
   });
 
@@ -43,10 +51,18 @@ $(document).ready(function() {
     $("#total-score").html(playerTotal);
     console.log("two" + crystalTwo + " ", playerTotal);
     if (playerTotal === playerGoal) {
-        console.log("You Win!!!")
+      console.log("You Win!!!");
+      playerTotal = 0;
+      winTotal++;
+      $("#win-total").html(winTotal);
+      console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
-        alert("Loser!")
+      alert("Loser!");
+      playerTotal = 0;
+      lossTotal++;
+      $("#loss-total").html(lossTotal);
+      console.log(lossTotal);
     }
   });
 
@@ -55,10 +71,18 @@ $(document).ready(function() {
     $("#total-score").html(playerTotal);
     console.log("three" + crystalThree + " ", playerTotal);
     if (playerTotal === playerGoal) {
-        console.log("You Win!!!")
+      console.log("You Win!!!");
+      playerTotal = 0;
+      winTotal++;
+      $("#win-total").html(winTotal);
+      console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
-        alert("Loser!")
+      alert("Loser!");
+      playerTotal = 0;
+      lossTotal++;
+      $("#loss-total").html(lossTotal);
+      console.log(lossTotal);
     }
   });
 
@@ -67,16 +91,23 @@ $(document).ready(function() {
     $("#total-score").html(playerTotal);
     console.log("four" + crystalFour + " ", playerTotal);
     if (playerTotal === playerGoal) {
-        console.log("You Win!!!")
+      alert("You Win!!!");
+      playerTotal = 0;
+      winTotal++;
+      $("#win-total").html(winTotal);
+      console.log(winTotal);
     }
     if (playerTotal > playerGoal) {
-        alert("Loser!")
+      alert("Loser!");
+      playerTotal = 0;
+      lossTotal++;
+      $("#loss-total").html(lossTotal);
+      console.log(lossTotal);
     }
   });
 
-  // If user total < guess total
-  // 	    User can keep clicking
-  
+  // If user total === playerGoal, reset game.
+
   // Else if it matches exactly,
   // 	    Win total increases by one
   // 	    Score resets
