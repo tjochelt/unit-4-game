@@ -1,32 +1,37 @@
 // 4 crystals are buttons
 
-// Each crystal holds random number between 1 and 12
 // Random number to match should be between 19 and 120
 $(document).ready(function() {
-  
+  var playerGoal;
+  var playerTotal;
 
-    function getRandom() {
-        return Math.floor(Math.random() * (120-19 + 1)) + 19;
-    }
-    console.log(getRandom())
-// console.log(getRandom)
-    // function randomNumber() {
-    //     var randomNumber = Math.floor(math.random()* 120);
-    //     return randomNumber();
-    //     console.log(randomNumber())
+  //sets player goal as random number between 19-120
+  $("#random-number").text(function() {
+    playerGoal = Math.floor(Math.random() * 102) + 19;
+  });
+$("#random-number").html(playerGoal);
+// console.log(playerGoal)
 
-    // var randomNumber = math.floor(math.random())
+  // Each crystal holds random number between 1 and 12
+  //Clicking on the crystal adds the random number to playerTotal
+  $("#crystal-1").on("click", function() {
+    playerTotal = function getRandom() {
+      return Math.floor(Math.random() * 12) + 1;
+    };
+  });
+  console.log(playerTotal);
+  // $(".random-number").append(getRandom())
 
-// If user total < guess total
-// 	    User can keep clicking
-// Else if it matches exactly,
-// 	    Win total increases by one
-// 	    Score resets
-// 	    Random numbers for crystals and match number reset
-// 	    Display 'you win'
-// Else
-// 	    Loss total increase by one
-// 	    Score resets
-// 	    Random numbers for crystals and match number reset
-// 	    Display you lose
+  // If user total < guess total
+  // 	    User can keep clicking
+  // Else if it matches exactly,
+  // 	    Win total increases by one
+  // 	    Score resets
+  // 	    Random numbers for crystals and match number reset
+  // 	    Display 'you win'
+  // Else
+  // 	    Loss total increase by one
+  // 	    Score resets
+  // 	    Random numbers for crystals and match number reset
+  // 	    Display you lose
 });
